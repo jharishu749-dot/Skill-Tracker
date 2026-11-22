@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Student Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="login">
+        <div class="login-card">
+            <h1>Welcome back</h1>
+            <p>Sign in to see your profile.</p>
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" autocomplete="username" placeholder="you@college.edu">
+            </div>
+            <div class="field">
+                <label for="pw">Password</label>
+                <input id="pw" type="password" autocomplete="current-password" placeholder="At least 4 characters">
+            </div>
+            <p class="err" id="loginErr" role="alert"></p>
+            <button class="btn" id="loginBtn">Sign in</button>
+        </div>
+    </div>
+
+    <div id="app" class="hidden">
+        <header class="top">
+            <div class="top-in">
+                <nav class="tabs" aria-label="Main">
+                    <button class="tab" aria-current="page">Profile</button>
+                </nav>
+                <button class="btn ghost small" id="logout">Sign out</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="who">
+                <div class="avatar" id="avatar"></div>
+                <div>
+                    <h1 id="name"></h1>
+                    <span id="mail"></span>
+                </div>
+            </div>
+
+            <div class="grid">
+                <section class="panel" aria-labelledby="h-links">
+                    <h2 id="h-links">Coding platforms</h2>
+                    <div class="row-form">
+                        <div>
+                            <label for="pName">Platform</label>
+                            <input id="pName" list="plats" placeholder="LeetCode">
+                            <datalist id="plats">
+                                <option>LeetCode</option>
+                                <option>Codeforces</option>
+                                <option>CodeChef</option>
+                                <option>GitHub</option>
+                                <option>HackerRank</option>
+                                <option>GeeksforGeeks</option>
+                            </datalist>
+                        </div>
+
+                        <div>
+                            <label for="pUrl">Profile link</label>
+                            <input id="pUrl" type="url" placeholder="https://leetcode.com/u/yourname">
+                        </div>
+
+                        <button class="btn" id="addLink">Add link</button>
+                    </div>
+
+                    <p class="err" id="linkErr" role="alert"></p>
+                    <ul class="list" id="links"></ul>
+                </section>
+
+                <section class="panel" aria-labelledby="h-acad">
+                    <h2 id="h-acad">Academic record</h2>
+
+                    <div class="avg">
+                        <strong id="avgVal">–</strong>
+                        <span id="avgLbl">Add a semester to see your average</span>
+                    </div>
+
+                    <div class="row-form two">
+                        <div>
+                            <label for="sSem">Semester</label>
+                            <select id="sSem"></select>
+                        </div>
+
+                        <div>
+                            <label for="sCg">CGPA (out of 10)</label>
+                            <input id="sCg" type="number" min="0" max="10" step="0.01" placeholder="8.45">
+                        </div>
+
+                        <button class="btn" id="addSem">Save semester</button>
+                    </div>
+
+                    <p class="err" id="semErr" role="alert"></p>
+                    <div id="sems"></div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
