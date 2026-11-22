@@ -16,14 +16,10 @@
         <div class="login-card">
             <h1>Welcome back</h1>
             <p>Sign in to see your profile.</p>
-            <div class="field">
-                <label for="email">Email</label>
-                <input id="email" type="email" autocomplete="username" placeholder="you@college.edu">
-            </div>
-            <div class="field">
-                <label for="pw">Password</label>
-                <input id="pw" type="password" autocomplete="current-password" placeholder="At least 4 characters">
-            </div>
+            <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="username"
+                    placeholder="you@college.edu"></div>
+            <div class="field"><label for="pw">Password</label><input id="pw" type="password"
+                    autocomplete="current-password" placeholder="At least 4 characters"></div>
             <p class="err" id="loginErr" role="alert"></p>
             <button class="btn" id="loginBtn">Sign in</button>
         </div>
@@ -33,7 +29,10 @@
         <header class="top">
             <div class="top-in">
                 <nav class="tabs" aria-label="Main">
-                    <button class="tab" aria-current="page">Profile</button>
+                    <button class="tab active" data-tab="profile">Profile</button>
+                    <button class="tab" data-tab="activity">Activity</button>
+                    <button class="tab" data-tab="stats">Stats</button>
+                    <button class="tab" data-tab="compete">Compete</button>
                 </nav>
                 <button class="btn ghost small" id="logout">Sign out</button>
             </div>
@@ -43,65 +42,197 @@
             <div class="who">
                 <div class="avatar" id="avatar"></div>
                 <div>
-                    <h1 id="name"></h1>
-                    <span id="mail"></span>
+                    <h1 id="name"></h1><span id="mail"></span>
                 </div>
             </div>
 
-            <div class="grid">
+            <!-- PROFILE TAB -->
+            <div id="tab-profile" class="grid">
                 <section class="panel" aria-labelledby="h-links">
                     <h2 id="h-links">Coding platforms</h2>
                     <div class="row-form">
-                        <div>
-                            <label for="pName">Platform</label>
-                            <input id="pName" list="plats" placeholder="LeetCode">
-                            <datalist id="plats">
+                        <div><label for="pName">Platform</label><input id="pName" list="plats"
+                                placeholder="LeetCode"><datalist id="plats">
                                 <option>LeetCode</option>
                                 <option>Codeforces</option>
                                 <option>CodeChef</option>
                                 <option>GitHub</option>
                                 <option>HackerRank</option>
                                 <option>GeeksforGeeks</option>
-                            </datalist>
-                        </div>
-
-                        <div>
-                            <label for="pUrl">Profile link</label>
-                            <input id="pUrl" type="url" placeholder="https://leetcode.com/u/yourname">
-                        </div>
-
+                            </datalist></div>
+                        <div><label for="pUrl">Profile link</label><input id="pUrl" type="url"
+                                placeholder="https://leetcode.com/u/yourname"></div>
                         <button class="btn" id="addLink">Add link</button>
                     </div>
-
                     <p class="err" id="linkErr" role="alert"></p>
                     <ul class="list" id="links"></ul>
                 </section>
 
                 <section class="panel" aria-labelledby="h-acad">
                     <h2 id="h-acad">Academic record</h2>
-
-                    <div class="avg">
-                        <strong id="avgVal">–</strong>
-                        <span id="avgLbl">Add a semester to see your average</span>
-                    </div>
-
+                    <div class="avg"><strong id="avgVal">–</strong><span id="avgLbl">Add a semester to see your
+                            average</span></div>
                     <div class="row-form two">
-                        <div>
-                            <label for="sSem">Semester</label>
-                            <select id="sSem"></select>
-                        </div>
-
-                        <div>
-                            <label for="sCg">CGPA (out of 10)</label>
-                            <input id="sCg" type="number" min="0" max="10" step="0.01" placeholder="8.45">
-                        </div>
-
+                        <div><label for="sSem">Semester</label><select id="sSem"></select></div>
+                        <div><label for="sCg">CGPA (out of 10)</label><input id="sCg" type="number" min="0" max="10"
+                                step="0.01" placeholder="8.45"></div>
                         <button class="btn" id="addSem">Save semester</button>
                     </div>
-
                     <p class="err" id="semErr" role="alert"></p>
                     <div id="sems"></div>
                 </section>
+            </div>
+
+            <!-- ACTIVITY TAB -->
+            <div id="tab-activity" class="hidden">
+                <div class="stats">
+                    <div class="stat"><span>Total solved</span><strong id="stTotal">0</strong></div>
+                    <div class="stat"><span>Current streak</span><strong id="stCur">0</strong><em>days</em></div>
+                    <div class="stat"><span>Longest streak</span><strong id="stMax">0</strong><em>days</em></div>
+                    <div class="stat"><span>Active days</span><strong id="stDays">0</strong><em>last 12 months: <b
+                                id="stYear">0</b> solved</em></div>
+                </div>
+
+                <section class="panel" aria-labelledby="h-heat">
+                    <h2 id="h-heat">Submission heatmap</h2>
+                    <div class="heat-wrap">
+                        <div class="months" id="months"></div>
+                        <div class="heat" id="heat" role="img" aria-label="Daily questions solved over the last year">
+                        </div>
+                    </div>
+                    <div class="legend">Less <i class="c l0"></i><i class="c l1"></i><i class="c l2"></i><i
+                            class="c l3"></i><i class="c l4"></i> More</div>
+                </section>
+
+                <div class="grid act-grid">
+                    <section class="panel" aria-labelledby="h-log">
+                        <h2 id="h-log">Log solved questions</h2>
+                        <div class="row-form two">
+                            <div><label for="lDate">Date</label><input id="lDate" type="date"></div>
+                            <div><label for="lCount">Questions solved</label><input id="lCount" type="number" min="1"
+                                    step="1" value="1"></div>
+                            <div style="grid-column:1/-1"><label for="lPlat">Platform</label><select
+                                    id="lPlat"></select></div>
+                            <button class="btn" id="addLog">Add to log</button>
+                        </div>
+                        <p class="err" id="logErr" role="alert"></p>
+                        <details>
+                            <summary>Already solved some before tracking?</summary>
+                            <div class="row-form" style="margin-top:.7rem">
+                                <div><label for="base">Starting total</label><input id="base" type="number" min="0"
+                                        step="1" placeholder="e.g. 250"></div>
+                                <button class="btn ghost" id="saveBase">Save starting total</button>
+                            </div>
+                        </details>
+                    </section>
+
+                    <section class="panel" aria-labelledby="h-rec">
+                        <h2 id="h-rec">Recent entries</h2>
+                        <ul class="list" id="recent"></ul>
+                    </section>
+                </div>
+            </div>
+            <!-- STATS TAB -->
+            <div id="tab-stats" class="hidden grid">
+                <section class="panel" aria-labelledby="h-dsa">
+                    <h2 id="h-dsa">DSA stats</h2>
+                    <div class="avg"><strong id="dTotal">0</strong><span>problems solved</span></div>
+                    <div class="stack" aria-hidden="true"><i class="easy"></i><i class="medium"></i><i class="hard"></i>
+                    </div>
+                    <div class="row-form three">
+                        <div><label class="k easy" for="dE">Easy</label><input id="dE" type="number" min="0" step="1">
+                        </div>
+                        <div><label class="k medium" for="dM">Medium</label><input id="dM" type="number" min="0"
+                                step="1"></div>
+                        <div><label class="k hard" for="dH">Hard</label><input id="dH" type="number" min="0" step="1">
+                        </div>
+                        <button class="btn" id="saveDsa">Save counts</button>
+                    </div>
+                    <h3 class="sub">By topic</h3>
+                    <div class="row-form two">
+                        <div><label for="tName">Topic</label><input id="tName" list="topics"
+                                placeholder="Dynamic Programming"><datalist id="topics">
+                                <option>Arrays</option>
+                                <option>Strings</option>
+                                <option>Linked List</option>
+                                <option>Stack &amp; Queue</option>
+                                <option>Trees</option>
+                                <option>Graphs</option>
+                                <option>Dynamic Programming</option>
+                                <option>Greedy</option>
+                                <option>Binary Search</option>
+                                <option>Recursion &amp; Backtracking</option>
+                            </datalist></div>
+                        <div><label for="tCount">Solved</label><input id="tCount" type="number" min="0" step="1"
+                                placeholder="25"></div>
+                        <button class="btn" id="addTopic">Add / update topic</button>
+                    </div>
+                    <p class="err" id="topicErr" role="alert"></p>
+                    <div id="topicList"></div>
+                </section>
+
+                <section class="panel" aria-labelledby="h-comp">
+                    <h2 id="h-comp">Competitive programming</h2>
+                    <div class="row-form two">
+                        <div style="grid-column:1/-1"><label for="cPlat">Platform</label><input id="cPlat" list="plats"
+                                placeholder="Codeforces"></div>
+                        <div><label for="cRating">Current rating</label><input id="cRating" type="number" min="0"
+                                step="1" placeholder="1650"></div>
+                        <div><label for="cPeak">Peak rating</label><input id="cPeak" type="number" min="0" step="1"
+                                placeholder="1720"></div>
+                        <div><label for="cCont">Contests played</label><input id="cCont" type="number" min="0" step="1"
+                                placeholder="24"></div>
+                        <div><label for="cRank">Title / best rank</label><input id="cRank" placeholder="Expert"></div>
+                        <button class="btn" id="addComp">Save platform stats</button>
+                    </div>
+                    <p class="err" id="compErr" role="alert"></p>
+                    <ul class="list" id="compList"></ul>
+                </section>
+            </div>
+            <!-- COMPETE TAB -->
+            <div id="tab-compete" class="hidden">
+                <section class="panel" aria-labelledby="h-lb">
+                    <h2 id="h-lb">Leaderboard</h2>
+                    <p id="cSummary" class="summary"></p>
+                    <div class="seg" id="seg" role="group" aria-label="Rank by">
+                        <button data-m="score" class="on">Overall</button>
+                        <button data-m="solved">Solved</button>
+                        <button data-m="cur">Current streak</button>
+                        <button data-m="max">Longest streak</button>
+                        <button data-m="rating">Top rating</button>
+                    </div>
+                    <div id="board"></div>
+                    <p class="note">Overall score: for each of the four metrics you get a share of the group’s best
+                        value, then the shares are averaged (0–100).</p>
+                </section>
+
+                <div class="grid act-grid">
+                    <section class="panel" aria-labelledby="h-fr">
+                        <h2 id="h-fr">Add a friend</h2>
+                        <div class="row-form two">
+                            <div style="grid-column:1/-1"><label for="fName">Friend’s name or ID</label><input
+                                    id="fName" placeholder="aman_k"></div>
+                            <div><label for="fSolved">Total solved</label><input id="fSolved" type="number" min="0"
+                                    step="1" placeholder="420"></div>
+                            <div><label for="fRating">Top rating</label><input id="fRating" type="number" min="0"
+                                    step="1" placeholder="1600"></div>
+                            <div><label for="fCur">Current streak</label><input id="fCur" type="number" min="0" step="1"
+                                    placeholder="7"></div>
+                            <div><label for="fMax">Longest streak</label><input id="fMax" type="number" min="0" step="1"
+                                    placeholder="31"></div>
+                            <button class="btn" id="addFriend">Save friend</button>
+                        </div>
+                        <p class="err" id="friendErr" role="alert"></p>
+                        <p class="note">Their numbers are typed in by you. Saving the same name again updates it.</p>
+                    </section>
+
+                    <section class="panel" aria-labelledby="h-h2h">
+                        <h2 id="h-h2h">Head to head</h2>
+                        <label for="h2hSel">Compare with</label>
+                        <select id="h2hSel"></select>
+                        <div id="h2h" class="h2h-wrap"></div>
+                    </section>
+                </div>
             </div>
         </main>
     </div>
