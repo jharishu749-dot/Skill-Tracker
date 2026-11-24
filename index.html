@@ -134,6 +134,17 @@
             </div>
             <!-- STATS TAB -->
             <div id="tab-stats" class="hidden grid">
+                <section class="panel" style="grid-column:1/-1" aria-labelledby="h-lc">
+                    <h2 id="h-lc">LeetCode sync</h2>
+                    <div class="row-form two">
+                        <div><label for="lcUser">LeetCode username</label><input id="lcUser" placeholder="your_username"
+                                autocomplete="off"></div>
+                        <div><label for="lcBase">API address</label><input id="lcBase"
+                                placeholder="http://localhost:3000"></div>
+                        <button class="btn" id="lcSync">Sync from LeetCode</button>
+                    </div>
+                    <p class="note" id="lcStatus" role="status">Not synced yet.</p>
+                </section>
                 <section class="panel" aria-labelledby="h-dsa">
                     <h2 id="h-dsa">DSA stats</h2>
                     <div class="avg"><strong id="dTotal">0</strong><span>problems solved</span></div>

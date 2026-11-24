@@ -6,7 +6,7 @@
     function del(k) { delete mem[k]; try { localStorage.removeItem(k); } catch (e) { } }
     var $ = function (id) { return document.getElementById(id); };
 
-    var user = null, links = [], sems = [], logs = [], base = 0, dsa = { easy: 0, medium: 0, hard: 0, topics: [] }, comp = [], friends = [];
+    var user = null, links = [], sems = [], logs = [], base = 0, dsa = { easy: 0, medium: 0, hard: 0, topics: [] }, comp = [], friends = [], lc = { user: '', base: 'http://localhost:3000', solved: 0, last: '' };
 
     /* ---------- date helpers (all local time) ---------- */
     function fmt(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
@@ -27,6 +27,9 @@
         dsa = get(key + ':dsa', { easy: 0, medium: 0, hard: 0, topics: [] });
         comp = get(key + ':comp', []);
         friends = get(key + ':friends', []);
+        lc = get(key + ':lc', { user: '', base: 'http://localhost:3000', solved: 0, last: '' });
+        $('lcUser').value = lc.user; $('lcBase').value = lc.base;
+        $('lcStatus').textContent = lc.last ? 'Last synced: ' + lc.last : 'Not synced yet.';
         var n = user.email.split('@')[0].replace(/[._-]+/g, ' ');
         $('name').textContent = n.replace(/\b\w/g, function (c) { return c.toUpperCase(); });
         $('mail').textContent = user.email;
@@ -36,7 +39,7 @@
     function save() {
         var key = 'user:' + user.email;
         set(key + ':links', links); set(key + ':sems', sems); set(key + ':logs', logs); set(key + ':base', base);
-        set(key + ':dsa', dsa); set(key + ':comp', comp); set(key + ':friends', friends);
+        set(key + ':dsa', dsa); set(key + ':comp', comp); set(key + ':friends', friends); set(key + ':lc', lc);
     }
 
     $('loginBtn').onclick = function () {
@@ -142,7 +145,7 @@
 
     function renderActivity() {
         var m = dailyMap(), st = calcStreaks(m);
-        var total = base + logs.reduce(function (t, l) { return t + l.count; }, 0);
+        var total = totalSolved();
         var today = new Date(); today = new Date(today.getFullYear(), today.getMonth(), today.getDate());
         var yearStart = addDays(today, -364), yearSum = 0;
         Object.keys(m).forEach(function (k) { if (parse(k) >= yearStart) yearSum += m[k]; });
@@ -278,7 +281,7 @@
         var st = calcStreaks(dailyMap());
         var all = [{
             me: true, id: 'me', name: 'You',
-            solved: base + logs.reduce(function (t, l) { return t + l.count; }, 0),
+            solved: totalSolved(),
             cur: st.cur, max: st.max,
             rating: comp.reduce(function (t, c) { return Math.max(t, c.peak); }, 0)
         }].concat(friends.map(function (f) { return { id: f.id, name: f.name, solved: f.solved, cur: f.cur, max: f.max, rating: f.rating }; }));
@@ -371,6 +374,46 @@
         friends.push({ id: old ? old.id : Date.now(), name: n, solved: num('fSolved'), cur: num('fCur'), max: Math.max(num('fMax'), num('fCur')), rating: num('fRating') });
         save(); renderCompete();
         ['fName', 'fSolved', 'fCur', 'fMax', 'fRating'].forEach(function (id) { $(id).value = ''; });
+    };
+
+    /* ---------- LeetCode sync ---------- */
+    // total = starting total + LeetCode's own solved count + manual (non-LeetCode) log entries
+    function totalSolved() {
+        return base + (lc.solved || 0) + logs.filter(function (l) { return l.plat !== 'LeetCode'; })
+            .reduce(function (t, l) { return t + l.count; }, 0);
+    }
+    function setStatus(msg) { $('lcStatus').textContent = msg; }
+
+    $('lcSync').onclick = function () {
+        var u = $('lcUser').value.trim(), b = $('lcBase').value.trim().replace(/\/+$/, '');
+        if (!u || !b) { setStatus('Enter your LeetCode username and the API address.'); return; }
+        setStatus('Syncing…');
+        fetch(b + '/' + encodeURIComponent(u))
+            .then(function (r) { if (!r.ok) throw new Error('The API answered with HTTP ' + r.status + '.'); return r.json(); })
+            .then(function (d) {
+                var e = d.easySolved, m = d.mediumSolved, h = d.hardSolved;
+                if (d.status === 'error' || [e, m, h].some(function (v) { return typeof v !== 'number'; })) {
+                    throw new Error(d.message || 'Unexpected response. Check the username and the API.');
+                }
+                // 1) DSA difficulty counts
+                dsa.easy = e; dsa.medium = m; dsa.hard = h;
+                lc.solved = typeof d.totalSolved === 'number' ? d.totalSolved : e + m + h;
+                // 2) daily calendar -> heatmap + streaks (timestamps are UTC midnight)
+                var cal = d.submissionCalendar || {};
+                if (typeof cal === 'string') cal = JSON.parse(cal);
+                logs = logs.filter(function (l) { return l.plat !== 'LeetCode'; });
+                var stamp = Date.now();
+                Object.keys(cal).forEach(function (ts, i) {
+                    var n = parseInt(cal[ts], 10);
+                    if (n > 0) logs.push({ id: stamp + i, date: new Date(+ts * 1000).toISOString().slice(0, 10), plat: 'LeetCode', count: n });
+                });
+                lc.user = u; lc.base = b; lc.last = new Date().toLocaleString();
+                save(); renderStats(); renderActivity(); renderCompete();
+                setStatus('Synced ' + lc.solved + ' solved · last synced ' + lc.last);
+            })
+            .catch(function (err) {
+                setStatus((err instanceof TypeError ? 'Couldn’t reach ' + b + '. Is the API running (and allowing CORS)?' : err.message));
+            });
     };
 
     /* ---------- boot ---------- */
