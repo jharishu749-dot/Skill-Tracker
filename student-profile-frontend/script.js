@@ -6,7 +6,7 @@
     function del(k) { delete mem[k]; try { localStorage.removeItem(k); } catch (e) { } }
     var $ = function (id) { return document.getElementById(id); };
 
-    var user = null, links = [], sems = [], logs = [], base = 0, dsa = { easy: 0, medium: 0, hard: 0, topics: [] }, comp = [], friends = [], lc = { user: '', base: 'http://localhost:3000', solved: 0, last: '' };
+    var user = null, links = [], sems = [], logs = [], base = 0, dsa = { easy: 0, medium: 0, hard: 0, topics: [] }, comp = [], friends = [], linked = [], incoming = [], outgoing = [], lc = { user: '', base: '', solved: 0, last: '' };
 
     /* ---------- date helpers (all local time) ---------- */
     function fmt(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
@@ -18,39 +18,96 @@
         $('login').classList.toggle('hidden', loggedIn);
         $('app').classList.toggle('hidden', !loggedIn);
     }
-    function load() {
-        var key = 'user:' + user.email;
-        links = get(key + ':links', []);
-        sems = get(key + ':sems', []);
-        logs = get(key + ':logs', []);
-        base = get(key + ':base', 0);
-        dsa = get(key + ':dsa', { easy: 0, medium: 0, hard: 0, topics: [] });
-        comp = get(key + ':comp', []);
-        friends = get(key + ':friends', []);
-        lc = get(key + ':lc', { user: '', base: 'http://localhost:3000', solved: 0, last: '' });
+    /* ---------- backend connection ---------- */
+    var API = 'http://localhost:4000';            // change to your deployed backend URL later
+    var DEFAULT_LC = API + '/api/leetcode';
+    var token = get('token', null);
+
+    function api(path, method, body) {
+        var opts = { method: method || 'GET', headers: { 'Content-Type': 'application/json' } };
+        if (token) opts.headers.Authorization = 'Bearer ' + token;
+        if (body) opts.body = JSON.stringify(body);
+        return fetch(API + path, opts).then(function (r) {
+            return r.json().catch(function () { return {}; }).then(function (j) {
+                if (!r.ok) { var e = new Error(j.error || ('Server error ' + r.status)); e.status = r.status; throw e; }
+                return j;
+            });
+        });
+    }
+
+    function hydrate(d) {
+        d = d || {};
+        links = d.links || []; sems = d.sems || []; logs = d.logs || []; base = d.base || 0;
+        dsa = d.dsa || { easy: 0, medium: 0, hard: 0, topics: [] };
+        comp = d.comp || []; friends = d.friends || [];
+        lc = d.lc || { user: '', base: DEFAULT_LC, solved: 0, last: '' };
+        if (!lc.base || /:3000\/?$/.test(lc.base)) lc.base = DEFAULT_LC;
+    }
+    // one-time import of data saved by the old browser-only version
+    function localData(email) {
+        var key = 'user:' + email + ':', d = {}, found = false;
+        ['links', 'sems', 'logs', 'base', 'dsa', 'comp', 'friends', 'lc'].forEach(function (k) {
+            var v = get(key + k, null); if (v !== null) { d[k] = v; found = true; }
+        });
+        return found ? d : null;
+    }
+
+    function load(d) {
+        hydrate(d);
         $('lcUser').value = lc.user; $('lcBase').value = lc.base;
         $('lcStatus').textContent = lc.last ? 'Last synced: ' + lc.last : 'Not synced yet.';
         var n = user.email.split('@')[0].replace(/[._-]+/g, ' ');
         $('name').textContent = n.replace(/\b\w/g, function (c) { return c.toUpperCase(); });
         $('mail').textContent = user.email;
         $('avatar').textContent = n.charAt(0).toUpperCase();
+        $('saveState').textContent = '';
         renderLinks(); renderSems(); renderActivity(); renderStats(); renderCompete(); switchTab('profile'); show(true);
-    }
-    function save() {
-        var key = 'user:' + user.email;
-        set(key + ':links', links); set(key + ':sems', sems); set(key + ':logs', logs); set(key + ':base', base);
-        set(key + ':dsa', dsa); set(key + ':comp', comp); set(key + ':friends', friends); set(key + ':lc', lc);
+        loadSocial(); save();
     }
 
-    $('loginBtn').onclick = function () {
+    var saveTimer = null;
+    function save() {
+        if (!user) return;
+        $('saveState').textContent = 'Saving…';
+        clearTimeout(saveTimer);
+        saveTimer = setTimeout(function () {
+            api('/api/data', 'PUT', { links: links, sems: sems, logs: logs, base: base, dsa: dsa, comp: comp, friends: friends, lc: lc, summary: mySummary() })
+                .then(function () { $('saveState').textContent = 'Saved'; })
+                .catch(function (err) {
+                    if (err.status === 401) { signOut(); $('loginErr').textContent = 'Session expired. Please sign in again.'; }
+                    else $('saveState').textContent = 'Not saved (server unreachable)';
+                });
+        }, 400);
+    }
+
+    /* ---------- sign in / sign up / sign out ---------- */
+    function signOut() { del('session'); del('token'); token = null; user = null; linked = []; incoming = []; outgoing = []; show(false); }
+
+    function authenticate(path) {
         var e = $('email').value.trim().toLowerCase(), p = $('pw').value;
         if (!/^\S+@\S+\.\S+$/.test(e)) { $('loginErr').textContent = 'Enter a valid email address.'; return; }
         if (p.length < 4) { $('loginErr').textContent = 'Password must be at least 4 characters.'; return; }
         $('loginErr').textContent = '';
-        user = { email: e }; set('session', user); $('pw').value = ''; load();
-    };
+        $('loginBtn').disabled = $('signupBtn').disabled = true;
+        api(path, 'POST', { email: e, password: p })
+            .then(function (res) {
+                token = res.token; set('token', token);
+                user = { email: res.email }; set('session', user); $('pw').value = '';
+                return api('/api/me').then(function (me) {
+                    var d = me.data || {}, migrated = false;
+                    if (!Object.keys(d).length) { var old = localData(user.email); if (old) { d = old; migrated = true; } }
+                    load(d); if (migrated) save();
+                });
+            })
+            .catch(function (err) {
+                $('loginErr').textContent = err instanceof TypeError ? 'Can’t reach the server at ' + API + '. Is it running?' : err.message;
+            })
+            .then(function () { $('loginBtn').disabled = $('signupBtn').disabled = false; });
+    }
+    $('loginBtn').onclick = function () { authenticate('/api/login'); };
+    $('signupBtn').onclick = function () { authenticate('/api/register'); };
     ['email', 'pw'].forEach(function (id) { $(id).addEventListener('keydown', function (ev) { if (ev.key === 'Enter') $('loginBtn').click(); }); });
-    $('logout').onclick = function () { del('session'); user = null; show(false); };
+    $('logout').onclick = signOut;
 
     /* ---------- tabs ---------- */
     function switchTab(name) {
@@ -61,7 +118,7 @@
         if (name === 'activity') renderActivity();
         $('tab-compete').classList.toggle('hidden', name !== 'compete');
         if (name === 'stats') renderStats();
-        if (name === 'compete') renderCompete();
+        if (name === 'compete') { renderCompete(); loadSocial(); }
     }
     document.querySelectorAll('.tab').forEach(function (t) { t.onclick = function () { switchTab(t.dataset.tab); }; });
 
@@ -277,14 +334,16 @@
     var METRICS = { score: 'Overall score', solved: 'Total solved', cur: 'Current streak', max: 'Longest streak', rating: 'Top rating' };
     var KEYS = ['solved', 'cur', 'max', 'rating'];
 
-    function people() {
+    function mySummary() {
         var st = calcStreaks(dailyMap());
-        var all = [{
-            me: true, id: 'me', name: 'You',
-            solved: totalSolved(),
-            cur: st.cur, max: st.max,
-            rating: comp.reduce(function (t, c) { return Math.max(t, c.peak); }, 0)
-        }].concat(friends.map(function (f) { return { id: f.id, name: f.name, solved: f.solved, cur: f.cur, max: f.max, rating: f.rating }; }));
+        return { solved: totalSolved(), cur: st.cur, max: st.max, rating: comp.reduce(function (t, c) { return Math.max(t, c.peak); }, 0) };
+    }
+    function people() {
+        var all = [Object.assign({ me: true, id: 'me', name: 'You' }, mySummary())]
+            .concat(linked.map(function (f) {
+                var s = f.summary || {};
+                return { id: 'u:' + f.email, email: f.email, linked: true, name: f.name, solved: s.solved || 0, cur: s.cur || 0, max: s.max || 0, rating: s.rating || 0 };
+            })).concat(friends.map(function (f) { return { id: f.id, name: f.name, solved: f.solved, cur: f.cur, max: f.max, rating: f.rating }; }));
         var mx = {};
         KEYS.forEach(function (k) { mx[k] = Math.max.apply(null, all.map(function (p) { return p[k]; })); });
         all.forEach(function (p) {
@@ -295,6 +354,7 @@
     function gapText(d) { return d > 0 ? 'You’re ' + d + ' behind' : d < 0 ? 'You’re ' + (-d) + ' ahead' : 'Tied with you'; }
 
     function renderCompete() {
+        renderRequests();
         var all = people(), me = all[0];
         var sorted = all.slice().sort(function (a, b) { return b[metric] - a[metric] || (a.me ? -1 : b.me ? 1 : a.name.localeCompare(b.name)); });
         var pos = sorted.indexOf(me) + 1;
@@ -317,10 +377,15 @@
             var mid = document.createElement('div');
             var nl = document.createElement('div'); nl.className = 'lb-name';
             var nm = document.createElement('strong'); nm.textContent = p.name; nl.appendChild(nm);
-            if (!p.me) {
+            if (p.linked) {
+                var bd = document.createElement('span'); bd.className = 'badge'; bd.textContent = 'linked'; nl.appendChild(bd);
+                var xl = document.createElement('button'); xl.className = 'x'; xl.textContent = '×'; xl.setAttribute('aria-label', 'Disconnect from ' + p.name);
+                xl.onclick = function () { if (confirm('Disconnect from ' + p.name + '?')) socialCall('/api/friends/' + encodeURIComponent(p.email), 'DELETE'); };
+                nl.appendChild(xl);
+            } else if (!p.me) {
                 var ed = document.createElement('button'); ed.className = 'x'; ed.textContent = 'edit'; ed.setAttribute('aria-label', 'Edit ' + p.name);
                 ed.onclick = function () {
-                    $('fName').value = p.name; $('fSolved').value = p.solved; $('fCur').value = p.cur; $('fMax').value = p.max; $('fRating').value = p.rating;
+                    $('manualBox').open = true; $('fName').value = p.name; $('fSolved').value = p.solved; $('fCur').value = p.cur; $('fMax').value = p.max; $('fRating').value = p.rating;
                     $('fName').scrollIntoView({ behavior: 'smooth', block: 'center' }); $('fName').focus();
                 };
                 var x = document.createElement('button'); x.className = 'x'; x.textContent = '×'; x.setAttribute('aria-label', 'Remove ' + p.name);
@@ -338,7 +403,7 @@
 
         // head to head
         var sel = $('h2hSel'), keep = sel.value; sel.innerHTML = '';
-        friends.forEach(function (fr) { var o = document.createElement('option'); o.value = fr.id; o.textContent = fr.name; sel.appendChild(o); });
+        all.slice(1).forEach(function (pp) { var o = document.createElement('option'); o.value = pp.id; o.textContent = pp.name; sel.appendChild(o); });
         if (keep) sel.value = keep;
         var wrap = $('h2h'); wrap.innerHTML = '';
         var other = all.filter(function (p) { return String(p.id) === sel.value; })[0];
@@ -374,6 +439,47 @@
         friends.push({ id: old ? old.id : Date.now(), name: n, solved: num('fSolved'), cur: num('fCur'), max: Math.max(num('fMax'), num('fCur')), rating: num('fRating') });
         save(); renderCompete();
         ['fName', 'fSolved', 'fCur', 'fMax', 'fRating'].forEach(function (id) { $(id).value = ''; });
+    };
+
+    /* ---------- connected friends (accounts) ---------- */
+    function loadSocial() {
+        api('/api/friends').then(function (r) {
+            linked = r.friends || []; incoming = r.incoming || []; outgoing = r.outgoing || [];
+            renderCompete();
+        }).catch(function () { });
+    }
+    function socialCall(path, method, email) {
+        return api(path, method || 'POST', email ? { email: email } : null)
+            .then(function () { $('socialMsg').textContent = ''; loadSocial(); })
+            .catch(function (err) { $('socialMsg').textContent = err.message; });
+    }
+    function renderRequests() {
+        var box = $('reqBox'); box.innerHTML = '';
+        function addRow(text, actions) {
+            var li = document.createElement('li'), sp = document.createElement('span'); sp.textContent = text; li.appendChild(sp);
+            var w = document.createElement('div'); w.className = 'req-actions';
+            actions.forEach(function (a) {
+                var b = document.createElement('button'); b.className = 'btn small' + (a.ghost ? ' ghost' : ''); b.textContent = a.label;
+                b.onclick = function () { socialCall(a.path, 'POST', a.email); }; w.appendChild(b);
+            });
+            li.appendChild(w); box.appendChild(li);
+        }
+        incoming.forEach(function (r) {
+            addRow(r.name + ' (' + r.email + ') wants to connect', [
+                { label: 'Accept', path: '/api/friends/accept', email: r.email },
+                { label: 'Decline', path: '/api/friends/decline', email: r.email, ghost: true }]);
+        });
+        outgoing.forEach(function (r) {
+            addRow('Request sent to ' + r.email, [{ label: 'Cancel', path: '/api/friends/cancel', email: r.email, ghost: true }]);
+        });
+    }
+    $('sendReq').onclick = function () {
+        var e = $('fEmail').value.trim().toLowerCase();
+        if (!e) { $('socialMsg').textContent = 'Enter your friend’s email.'; return; }
+        api('/api/friends/request', 'POST', { email: e }).then(function (r) {
+            $('socialMsg').textContent = r.status === 'connected' ? 'You’re now connected!' : 'Request sent. They need to accept it.';
+            $('fEmail').value = ''; loadSocial();
+        }).catch(function (err) { $('socialMsg').textContent = err.message; });
     };
 
     /* ---------- LeetCode sync ---------- */
@@ -418,5 +524,11 @@
 
     /* ---------- boot ---------- */
     var s = get('session', null);
-    if (s && s.email) { user = s; load(); } else show(false);
+    if (s && s.email && token) {
+        user = s;
+        api('/api/me').then(function (me) { load(me.data || {}); }).catch(function (err) {
+            user = null; show(false);
+            if (err.status !== 401) $('loginErr').textContent = 'Can’t reach the server at ' + API + '. Is it running?';
+        });
+    } else show(false);
 })();

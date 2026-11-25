@@ -15,13 +15,14 @@
     <div id="login">
         <div class="login-card">
             <h1>Welcome back</h1>
-            <p>Sign in to see your profile.</p>
+            <p>Sign in, or create an account to get started.</p>
             <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="username"
                     placeholder="you@college.edu"></div>
             <div class="field"><label for="pw">Password</label><input id="pw" type="password"
                     autocomplete="current-password" placeholder="At least 4 characters"></div>
             <p class="err" id="loginErr" role="alert"></p>
             <button class="btn" id="loginBtn">Sign in</button>
+            <button class="btn ghost" id="signupBtn">Create account</button>
         </div>
     </div>
 
@@ -34,7 +35,8 @@
                     <button class="tab" data-tab="stats">Stats</button>
                     <button class="tab" data-tab="compete">Compete</button>
                 </nav>
-                <button class="btn ghost small" id="logout">Sign out</button>
+                <div class="top-right"><span class="save-state" id="saveState" role="status"></span><button
+                        class="btn ghost small" id="logout">Sign out</button></div>
             </div>
         </header>
 
@@ -140,7 +142,7 @@
                         <div><label for="lcUser">LeetCode username</label><input id="lcUser" placeholder="your_username"
                                 autocomplete="off"></div>
                         <div><label for="lcBase">API address</label><input id="lcBase"
-                                placeholder="http://localhost:3000"></div>
+                                placeholder="http://localhost:4000/api/leetcode"></div>
                         <button class="btn" id="lcSync">Sync from LeetCode</button>
                     </div>
                     <p class="note" id="lcStatus" role="status">Not synced yet.</p>
@@ -219,22 +221,34 @@
 
                 <div class="grid act-grid">
                     <section class="panel" aria-labelledby="h-fr">
-                        <h2 id="h-fr">Add a friend</h2>
-                        <div class="row-form two">
-                            <div style="grid-column:1/-1"><label for="fName">Friend’s name or ID</label><input
-                                    id="fName" placeholder="aman_k"></div>
-                            <div><label for="fSolved">Total solved</label><input id="fSolved" type="number" min="0"
-                                    step="1" placeholder="420"></div>
-                            <div><label for="fRating">Top rating</label><input id="fRating" type="number" min="0"
-                                    step="1" placeholder="1600"></div>
-                            <div><label for="fCur">Current streak</label><input id="fCur" type="number" min="0" step="1"
-                                    placeholder="7"></div>
-                            <div><label for="fMax">Longest streak</label><input id="fMax" type="number" min="0" step="1"
-                                    placeholder="31"></div>
-                            <button class="btn" id="addFriend">Save friend</button>
+                        <h2 id="h-fr">Connect with friends</h2>
+                        <div class="row-form">
+                            <div><label for="fEmail">Friend’s account email</label><input id="fEmail" type="email"
+                                    placeholder="friend@college.edu"></div>
+                            <button class="btn" id="sendReq">Send request</button>
                         </div>
-                        <p class="err" id="friendErr" role="alert"></p>
-                        <p class="note">Their numbers are typed in by you. Saving the same name again updates it.</p>
+                        <p class="note" id="socialMsg" role="status">They’ll see your solved count, streaks and top
+                            rating once they accept.</p>
+                        <ul class="list" id="reqBox"></ul>
+                        <details id="manualBox" style="margin-top:1rem">
+                            <summary>Add someone manually (no account)</summary>
+                            <div class="row-form two" style="margin-top:.7rem">
+                                <div style="grid-column:1/-1"><label for="fName">Friend’s name or ID</label><input
+                                        id="fName" placeholder="aman_k"></div>
+                                <div><label for="fSolved">Total solved</label><input id="fSolved" type="number" min="0"
+                                        step="1" placeholder="420"></div>
+                                <div><label for="fRating">Top rating</label><input id="fRating" type="number" min="0"
+                                        step="1" placeholder="1600"></div>
+                                <div><label for="fCur">Current streak</label><input id="fCur" type="number" min="0"
+                                        step="1" placeholder="7"></div>
+                                <div><label for="fMax">Longest streak</label><input id="fMax" type="number" min="0"
+                                        step="1" placeholder="31"></div>
+                                <button class="btn" id="addFriend">Save friend</button>
+                            </div>
+                            <p class="err" id="friendErr" role="alert"></p>
+                            <p class="note">Their numbers are typed in by you. Saving the same name again updates it.
+                            </p>
+                        </details>
                     </section>
 
                     <section class="panel" aria-labelledby="h-h2h">
