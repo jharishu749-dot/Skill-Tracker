@@ -1,0 +1,3557 @@
+{
+  "users": {
+    "jharishu749@gmail.com": {
+      "passwordHash": "$2a$10$eVK6G4rm96XErt3DBrL0a.andAD4KRLEXTCIQGrzCpBwKgA37K.ki",
+      "data": {
+        "links": [],
+        "sems": [
+          {
+            "sem": 1,
+            "cgpa": 7.6
+          },
+          {
+            "sem": 2,
+            "cgpa": 8.01
+          }
+        ],
+        "logs": [
+          {
+            "id": 1795590748227,
+            "date": "2026-01-13",
+            "plat": "LeetCode",
+            "count": 15
+          },
+          {
+            "id": 1795590748228,
+            "date": "2026-01-14",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748229,
+            "date": "2026-01-15",
+            "plat": "LeetCode",
+            "count": 14
+          },
+          {
+            "id": 1795590748230,
+            "date": "2026-01-16",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748231,
+            "date": "2026-01-29",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748232,
+            "date": "2026-02-03",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748233,
+            "date": "2026-02-05",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748234,
+            "date": "2026-02-06",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748235,
+            "date": "2026-02-07",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748236,
+            "date": "2026-02-11",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748237,
+            "date": "2026-02-18",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748238,
+            "date": "2026-02-22",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748239,
+            "date": "2026-02-28",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748240,
+            "date": "2026-03-06",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748241,
+            "date": "2026-03-07",
+            "plat": "LeetCode",
+            "count": 12
+          },
+          {
+            "id": 1795590748242,
+            "date": "2026-03-12",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748243,
+            "date": "2026-03-15",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748244,
+            "date": "2026-03-17",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748245,
+            "date": "2026-03-26",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748246,
+            "date": "2026-03-27",
+            "plat": "LeetCode",
+            "count": 7
+          },
+          {
+            "id": 1795590748247,
+            "date": "2026-03-28",
+            "plat": "LeetCode",
+            "count": 8
+          },
+          {
+            "id": 1795590748248,
+            "date": "2026-03-29",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748249,
+            "date": "2026-03-30",
+            "plat": "LeetCode",
+            "count": 8
+          },
+          {
+            "id": 1795590748250,
+            "date": "2026-04-02",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748251,
+            "date": "2026-05-03",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748252,
+            "date": "2026-05-09",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748253,
+            "date": "2026-05-11",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748254,
+            "date": "2026-05-13",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748255,
+            "date": "2026-05-14",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748256,
+            "date": "2026-05-15",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748257,
+            "date": "2026-05-16",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795590748258,
+            "date": "2026-05-17",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748259,
+            "date": "2026-05-18",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748260,
+            "date": "2026-05-19",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748261,
+            "date": "2026-05-20",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748262,
+            "date": "2026-05-21",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748263,
+            "date": "2026-05-22",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748264,
+            "date": "2026-05-23",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748265,
+            "date": "2026-05-24",
+            "plat": "LeetCode",
+            "count": 9
+          },
+          {
+            "id": 1795590748266,
+            "date": "2026-05-25",
+            "plat": "LeetCode",
+            "count": 10
+          },
+          {
+            "id": 1795590748267,
+            "date": "2026-05-26",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748268,
+            "date": "2026-05-27",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748269,
+            "date": "2026-05-28",
+            "plat": "LeetCode",
+            "count": 9
+          },
+          {
+            "id": 1795590748270,
+            "date": "2026-05-29",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795590748271,
+            "date": "2026-05-30",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748272,
+            "date": "2026-05-31",
+            "plat": "LeetCode",
+            "count": 14
+          },
+          {
+            "id": 1795590748273,
+            "date": "2026-06-01",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748274,
+            "date": "2026-06-02",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748275,
+            "date": "2026-06-03",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795590748276,
+            "date": "2026-06-04",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748277,
+            "date": "2026-06-05",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748278,
+            "date": "2026-06-06",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748279,
+            "date": "2026-06-07",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748280,
+            "date": "2026-06-08",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748281,
+            "date": "2026-06-09",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748282,
+            "date": "2026-06-10",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748283,
+            "date": "2026-06-11",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748284,
+            "date": "2026-06-12",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748285,
+            "date": "2026-06-13",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748286,
+            "date": "2026-06-14",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748287,
+            "date": "2026-06-15",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748288,
+            "date": "2026-06-16",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748289,
+            "date": "2026-06-17",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748290,
+            "date": "2026-06-18",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748291,
+            "date": "2026-06-19",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748292,
+            "date": "2026-06-20",
+            "plat": "LeetCode",
+            "count": 13
+          },
+          {
+            "id": 1795590748293,
+            "date": "2026-06-21",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795590748294,
+            "date": "2026-06-22",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748295,
+            "date": "2026-06-23",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748296,
+            "date": "2026-06-24",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748297,
+            "date": "2026-06-25",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748298,
+            "date": "2026-06-26",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748299,
+            "date": "2026-06-27",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748300,
+            "date": "2026-06-28",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748301,
+            "date": "2026-06-29",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748302,
+            "date": "2026-06-30",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748303,
+            "date": "2026-07-01",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748304,
+            "date": "2026-07-02",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748305,
+            "date": "2026-07-03",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748306,
+            "date": "2026-07-04",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748307,
+            "date": "2026-07-05",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748308,
+            "date": "2026-07-06",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748309,
+            "date": "2026-07-07",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748310,
+            "date": "2026-07-08",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748311,
+            "date": "2026-07-09",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748312,
+            "date": "2026-07-10",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748313,
+            "date": "2026-07-11",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748314,
+            "date": "2026-07-12",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748315,
+            "date": "2026-07-13",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748316,
+            "date": "2026-07-14",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795590748317,
+            "date": "2026-07-15",
+            "plat": "LeetCode",
+            "count": 11
+          },
+          {
+            "id": 1795590748318,
+            "date": "2026-07-16",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748319,
+            "date": "2026-07-17",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748320,
+            "date": "2026-07-18",
+            "plat": "LeetCode",
+            "count": 14
+          },
+          {
+            "id": 1795590748321,
+            "date": "2026-07-19",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748322,
+            "date": "2026-07-20",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748323,
+            "date": "2026-07-21",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748324,
+            "date": "2026-07-22",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795590748325,
+            "date": "2026-07-23",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748326,
+            "date": "2026-07-24",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748327,
+            "date": "2026-07-25",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795590748328,
+            "date": "2026-07-26",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748329,
+            "date": "2026-07-27",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748330,
+            "date": "2026-07-28",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748331,
+            "date": "2026-07-29",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748332,
+            "date": "2026-07-30",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748333,
+            "date": "2026-07-31",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748334,
+            "date": "2026-08-01",
+            "plat": "LeetCode",
+            "count": 7
+          },
+          {
+            "id": 1795590748335,
+            "date": "2026-08-02",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748336,
+            "date": "2026-08-03",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748337,
+            "date": "2026-08-04",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748338,
+            "date": "2026-08-05",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748339,
+            "date": "2026-08-06",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748340,
+            "date": "2026-08-07",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748341,
+            "date": "2026-08-08",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748342,
+            "date": "2026-08-09",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748343,
+            "date": "2026-08-10",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748344,
+            "date": "2026-08-11",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748345,
+            "date": "2026-08-12",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748346,
+            "date": "2026-08-13",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748347,
+            "date": "2026-08-14",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748348,
+            "date": "2026-08-15",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748349,
+            "date": "2026-08-16",
+            "plat": "LeetCode",
+            "count": 7
+          },
+          {
+            "id": 1795590748350,
+            "date": "2026-08-17",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748351,
+            "date": "2026-08-18",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748352,
+            "date": "2026-08-19",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748353,
+            "date": "2026-08-20",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748354,
+            "date": "2026-08-21",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748355,
+            "date": "2026-08-22",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748356,
+            "date": "2026-08-23",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748357,
+            "date": "2026-08-24",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748358,
+            "date": "2026-08-25",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748359,
+            "date": "2026-08-26",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748360,
+            "date": "2026-08-27",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748361,
+            "date": "2026-08-28",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748362,
+            "date": "2026-08-29",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748363,
+            "date": "2026-08-30",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748364,
+            "date": "2026-08-31",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748365,
+            "date": "2026-09-01",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748366,
+            "date": "2026-09-02",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748367,
+            "date": "2026-09-03",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748368,
+            "date": "2026-09-04",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748369,
+            "date": "2026-09-05",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748370,
+            "date": "2026-09-06",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748371,
+            "date": "2026-09-07",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748372,
+            "date": "2026-09-08",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748373,
+            "date": "2026-09-09",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748374,
+            "date": "2026-09-10",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748375,
+            "date": "2026-09-11",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748376,
+            "date": "2026-09-12",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748377,
+            "date": "2026-09-13",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748378,
+            "date": "2026-09-14",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748379,
+            "date": "2026-09-15",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748380,
+            "date": "2026-09-16",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748381,
+            "date": "2026-09-17",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748382,
+            "date": "2026-09-18",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748383,
+            "date": "2026-09-19",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748384,
+            "date": "2026-09-20",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748385,
+            "date": "2026-09-21",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748386,
+            "date": "2026-09-22",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748387,
+            "date": "2026-09-23",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748388,
+            "date": "2026-09-24",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748389,
+            "date": "2026-09-25",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748390,
+            "date": "2026-09-26",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748391,
+            "date": "2026-09-27",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748392,
+            "date": "2026-09-28",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748393,
+            "date": "2026-09-29",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748394,
+            "date": "2026-09-30",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748395,
+            "date": "2026-10-01",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748396,
+            "date": "2026-10-02",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748397,
+            "date": "2026-10-03",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748398,
+            "date": "2026-10-04",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748399,
+            "date": "2026-10-05",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748400,
+            "date": "2026-10-06",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748401,
+            "date": "2026-10-07",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748402,
+            "date": "2026-10-08",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795590748403,
+            "date": "2026-10-09",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748404,
+            "date": "2026-10-10",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748405,
+            "date": "2026-10-11",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748406,
+            "date": "2026-10-12",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748407,
+            "date": "2026-10-13",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748408,
+            "date": "2026-10-14",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748409,
+            "date": "2026-10-15",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795590748410,
+            "date": "2026-10-16",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748411,
+            "date": "2026-10-17",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748412,
+            "date": "2026-10-18",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748413,
+            "date": "2026-10-19",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748414,
+            "date": "2026-10-20",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748415,
+            "date": "2026-10-21",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748416,
+            "date": "2026-10-22",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748417,
+            "date": "2026-10-23",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748418,
+            "date": "2026-10-24",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748419,
+            "date": "2026-10-25",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748420,
+            "date": "2026-10-26",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748421,
+            "date": "2026-10-27",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748422,
+            "date": "2026-10-28",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795590748423,
+            "date": "2026-10-29",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748424,
+            "date": "2026-10-30",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748425,
+            "date": "2026-10-31",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748426,
+            "date": "2026-11-01",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748427,
+            "date": "2026-11-02",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748428,
+            "date": "2026-11-03",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748429,
+            "date": "2026-11-04",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748430,
+            "date": "2026-11-05",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748431,
+            "date": "2026-11-06",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748432,
+            "date": "2026-11-07",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748433,
+            "date": "2026-11-08",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748434,
+            "date": "2026-11-09",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748435,
+            "date": "2026-11-10",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748436,
+            "date": "2026-11-11",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748437,
+            "date": "2026-11-12",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748438,
+            "date": "2026-11-13",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795590748439,
+            "date": "2026-11-14",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748440,
+            "date": "2026-11-15",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748441,
+            "date": "2026-11-16",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795590748442,
+            "date": "2026-11-17",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748443,
+            "date": "2026-11-18",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748444,
+            "date": "2026-11-19",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748445,
+            "date": "2026-11-20",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748446,
+            "date": "2026-11-21",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748447,
+            "date": "2026-11-22",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748448,
+            "date": "2026-11-23",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795590748449,
+            "date": "2026-11-24",
+            "plat": "LeetCode",
+            "count": 2
+          }
+        ],
+        "comp": [],
+        "friends": [],
+        "base": 0,
+        "dsa": {
+          "easy": 198,
+          "medium": 124,
+          "hard": 4,
+          "topics": []
+        },
+        "lc": {
+          "user": "rishabh_sama",
+          "base": "http://localhost:4000/api/leetcode",
+          "solved": 326,
+          "last": "11/25/2026, 12:42:28 PM"
+        }
+      },
+      "social": {
+        "friends": [
+          "tyagirajat6002@gmail.com"
+        ],
+        "incoming": [],
+        "outgoing": []
+      },
+      "summary": {
+        "solved": 326,
+        "cur": 196,
+        "max": 196,
+        "rating": 0,
+        "updated": "2026-11-25"
+      }
+    },
+    "tyagirajat6002@gmail.com": {
+      "passwordHash": "$2a$10$SQpZ5gJWguD3OtfN00.uw.8VrExo6zVSwmHWsZzO9D.Kjv.hk2fyq",
+      "data": {
+        "links": [],
+        "sems": [],
+        "logs": [
+          {
+            "id": 1795591571686,
+            "date": "2025-11-25",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571687,
+            "date": "2025-11-26",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571688,
+            "date": "2025-11-27",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571689,
+            "date": "2025-11-28",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571690,
+            "date": "2025-11-29",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571691,
+            "date": "2025-11-30",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571692,
+            "date": "2025-12-01",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571693,
+            "date": "2025-12-02",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571694,
+            "date": "2025-12-03",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571695,
+            "date": "2025-12-04",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571696,
+            "date": "2025-12-05",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571697,
+            "date": "2025-12-06",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571698,
+            "date": "2025-12-07",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571699,
+            "date": "2025-12-08",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571700,
+            "date": "2025-12-09",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571701,
+            "date": "2025-12-10",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571702,
+            "date": "2025-12-11",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571703,
+            "date": "2025-12-12",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571704,
+            "date": "2025-12-13",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571705,
+            "date": "2025-12-14",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571706,
+            "date": "2025-12-15",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571707,
+            "date": "2025-12-16",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571708,
+            "date": "2025-12-17",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571709,
+            "date": "2025-12-18",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571710,
+            "date": "2025-12-19",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571711,
+            "date": "2025-12-20",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571712,
+            "date": "2025-12-21",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571713,
+            "date": "2025-12-22",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571714,
+            "date": "2025-12-23",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571715,
+            "date": "2025-12-24",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571716,
+            "date": "2025-12-25",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571717,
+            "date": "2025-12-26",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571718,
+            "date": "2025-12-27",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571719,
+            "date": "2025-12-28",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571720,
+            "date": "2025-12-29",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571721,
+            "date": "2025-12-30",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571722,
+            "date": "2025-12-31",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571723,
+            "date": "2026-01-01",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571724,
+            "date": "2026-01-02",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571725,
+            "date": "2026-01-03",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571726,
+            "date": "2026-01-04",
+            "plat": "LeetCode",
+            "count": 8
+          },
+          {
+            "id": 1795591571727,
+            "date": "2026-01-05",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571728,
+            "date": "2026-01-06",
+            "plat": "LeetCode",
+            "count": 7
+          },
+          {
+            "id": 1795591571729,
+            "date": "2026-01-07",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571730,
+            "date": "2026-01-08",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571731,
+            "date": "2026-01-09",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571732,
+            "date": "2026-01-10",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571733,
+            "date": "2026-01-11",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571734,
+            "date": "2026-01-12",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571735,
+            "date": "2026-01-13",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571736,
+            "date": "2026-01-14",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571737,
+            "date": "2026-01-15",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571738,
+            "date": "2026-01-16",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571739,
+            "date": "2026-01-17",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571740,
+            "date": "2026-01-18",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571741,
+            "date": "2026-01-19",
+            "plat": "LeetCode",
+            "count": 8
+          },
+          {
+            "id": 1795591571742,
+            "date": "2026-01-20",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571743,
+            "date": "2026-01-21",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571744,
+            "date": "2026-01-22",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571745,
+            "date": "2026-01-23",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571746,
+            "date": "2026-01-24",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571747,
+            "date": "2026-01-25",
+            "plat": "LeetCode",
+            "count": 10
+          },
+          {
+            "id": 1795591571748,
+            "date": "2026-01-26",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571749,
+            "date": "2026-01-27",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571750,
+            "date": "2026-01-28",
+            "plat": "LeetCode",
+            "count": 8
+          },
+          {
+            "id": 1795591571751,
+            "date": "2026-01-29",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571752,
+            "date": "2026-01-30",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571753,
+            "date": "2026-01-31",
+            "plat": "LeetCode",
+            "count": 12
+          },
+          {
+            "id": 1795591571754,
+            "date": "2026-02-01",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571755,
+            "date": "2026-02-02",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571756,
+            "date": "2026-02-03",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571757,
+            "date": "2026-02-04",
+            "plat": "LeetCode",
+            "count": 7
+          },
+          {
+            "id": 1795591571758,
+            "date": "2026-02-05",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571759,
+            "date": "2026-02-06",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571760,
+            "date": "2026-02-07",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571761,
+            "date": "2026-02-08",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571762,
+            "date": "2026-02-09",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571763,
+            "date": "2026-02-10",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571764,
+            "date": "2026-02-11",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571765,
+            "date": "2026-02-12",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571766,
+            "date": "2026-02-13",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571767,
+            "date": "2026-02-14",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571768,
+            "date": "2026-02-15",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571769,
+            "date": "2026-02-16",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571770,
+            "date": "2026-02-17",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571771,
+            "date": "2026-02-18",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571772,
+            "date": "2026-02-19",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571773,
+            "date": "2026-02-20",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571774,
+            "date": "2026-02-21",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571775,
+            "date": "2026-02-22",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571776,
+            "date": "2026-02-23",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571777,
+            "date": "2026-02-24",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571778,
+            "date": "2026-02-25",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571779,
+            "date": "2026-02-26",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571780,
+            "date": "2026-02-27",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571781,
+            "date": "2026-02-28",
+            "plat": "LeetCode",
+            "count": 7
+          },
+          {
+            "id": 1795591571782,
+            "date": "2026-03-01",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571783,
+            "date": "2026-03-02",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571784,
+            "date": "2026-03-03",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571785,
+            "date": "2026-03-04",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571786,
+            "date": "2026-03-05",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571787,
+            "date": "2026-03-06",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571788,
+            "date": "2026-03-07",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571789,
+            "date": "2026-03-08",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571790,
+            "date": "2026-03-09",
+            "plat": "LeetCode",
+            "count": 8
+          },
+          {
+            "id": 1795591571791,
+            "date": "2026-03-10",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571792,
+            "date": "2026-03-11",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571793,
+            "date": "2026-03-12",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571794,
+            "date": "2026-03-13",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571795,
+            "date": "2026-03-14",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571796,
+            "date": "2026-03-15",
+            "plat": "LeetCode",
+            "count": 7
+          },
+          {
+            "id": 1795591571797,
+            "date": "2026-03-16",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571798,
+            "date": "2026-03-17",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571799,
+            "date": "2026-03-18",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571800,
+            "date": "2026-03-19",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571801,
+            "date": "2026-03-20",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571802,
+            "date": "2026-03-21",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571803,
+            "date": "2026-03-22",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571804,
+            "date": "2026-03-23",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571805,
+            "date": "2026-03-24",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571806,
+            "date": "2026-03-25",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571807,
+            "date": "2026-03-26",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571808,
+            "date": "2026-03-27",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571809,
+            "date": "2026-03-28",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571810,
+            "date": "2026-03-29",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571811,
+            "date": "2026-03-30",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571812,
+            "date": "2026-03-31",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571813,
+            "date": "2026-04-01",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571814,
+            "date": "2026-04-02",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571815,
+            "date": "2026-04-03",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571816,
+            "date": "2026-04-04",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571817,
+            "date": "2026-04-05",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571818,
+            "date": "2026-04-06",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571819,
+            "date": "2026-04-07",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571820,
+            "date": "2026-04-08",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571821,
+            "date": "2026-04-09",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571822,
+            "date": "2026-04-10",
+            "plat": "LeetCode",
+            "count": 7
+          },
+          {
+            "id": 1795591571823,
+            "date": "2026-04-11",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571824,
+            "date": "2026-04-12",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571825,
+            "date": "2026-04-13",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571826,
+            "date": "2026-04-14",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571827,
+            "date": "2026-04-15",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571828,
+            "date": "2026-04-16",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571829,
+            "date": "2026-04-17",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571830,
+            "date": "2026-04-18",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571831,
+            "date": "2026-04-19",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571832,
+            "date": "2026-04-20",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571833,
+            "date": "2026-04-21",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571834,
+            "date": "2026-04-22",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571835,
+            "date": "2026-04-23",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571836,
+            "date": "2026-04-24",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571837,
+            "date": "2026-04-25",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571838,
+            "date": "2026-04-26",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571839,
+            "date": "2026-04-27",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571840,
+            "date": "2026-04-28",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571841,
+            "date": "2026-04-29",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571842,
+            "date": "2026-04-30",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571843,
+            "date": "2026-05-01",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571844,
+            "date": "2026-05-02",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571845,
+            "date": "2026-05-03",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571846,
+            "date": "2026-05-04",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571847,
+            "date": "2026-05-05",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571848,
+            "date": "2026-05-06",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571849,
+            "date": "2026-05-07",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571850,
+            "date": "2026-05-08",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571851,
+            "date": "2026-05-09",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571852,
+            "date": "2026-05-10",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571853,
+            "date": "2026-05-11",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571854,
+            "date": "2026-05-12",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571855,
+            "date": "2026-05-13",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571856,
+            "date": "2026-05-14",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571857,
+            "date": "2026-05-15",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571858,
+            "date": "2026-05-16",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571859,
+            "date": "2026-05-17",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571860,
+            "date": "2026-05-18",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571861,
+            "date": "2026-05-19",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571862,
+            "date": "2026-05-21",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571863,
+            "date": "2026-05-22",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571864,
+            "date": "2026-05-23",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571865,
+            "date": "2026-05-24",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571866,
+            "date": "2026-05-25",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571867,
+            "date": "2026-05-26",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571868,
+            "date": "2026-05-27",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571869,
+            "date": "2026-05-28",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571870,
+            "date": "2026-05-29",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571871,
+            "date": "2026-05-30",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571872,
+            "date": "2026-05-31",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571873,
+            "date": "2026-06-01",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571874,
+            "date": "2026-06-02",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571875,
+            "date": "2026-06-03",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571876,
+            "date": "2026-06-04",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571877,
+            "date": "2026-06-05",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571878,
+            "date": "2026-06-06",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571879,
+            "date": "2026-06-07",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571880,
+            "date": "2026-06-08",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571881,
+            "date": "2026-06-09",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571882,
+            "date": "2026-06-10",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571883,
+            "date": "2026-06-11",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571884,
+            "date": "2026-06-12",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571885,
+            "date": "2026-06-13",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571886,
+            "date": "2026-06-14",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571887,
+            "date": "2026-06-15",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571888,
+            "date": "2026-06-16",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571889,
+            "date": "2026-06-17",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571890,
+            "date": "2026-06-18",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571891,
+            "date": "2026-06-19",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571892,
+            "date": "2026-06-20",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571893,
+            "date": "2026-06-21",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571894,
+            "date": "2026-06-22",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571895,
+            "date": "2026-06-23",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571896,
+            "date": "2026-06-24",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571897,
+            "date": "2026-06-26",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571898,
+            "date": "2026-06-27",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571899,
+            "date": "2026-06-28",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571900,
+            "date": "2026-06-29",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571901,
+            "date": "2026-06-30",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571902,
+            "date": "2026-07-02",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571903,
+            "date": "2026-07-03",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571904,
+            "date": "2026-07-04",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571905,
+            "date": "2026-07-05",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571906,
+            "date": "2026-07-06",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571907,
+            "date": "2026-07-07",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571908,
+            "date": "2026-07-08",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571909,
+            "date": "2026-07-09",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571910,
+            "date": "2026-07-10",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571911,
+            "date": "2026-07-11",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571912,
+            "date": "2026-07-12",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571913,
+            "date": "2026-07-13",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571914,
+            "date": "2026-07-14",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571915,
+            "date": "2026-07-15",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571916,
+            "date": "2026-07-16",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571917,
+            "date": "2026-07-17",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571918,
+            "date": "2026-07-18",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571919,
+            "date": "2026-07-19",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571920,
+            "date": "2026-07-20",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571921,
+            "date": "2026-07-21",
+            "plat": "LeetCode",
+            "count": 8
+          },
+          {
+            "id": 1795591571922,
+            "date": "2026-07-22",
+            "plat": "LeetCode",
+            "count": 7
+          },
+          {
+            "id": 1795591571923,
+            "date": "2026-07-23",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571924,
+            "date": "2026-07-24",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571925,
+            "date": "2026-07-25",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571926,
+            "date": "2026-07-26",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571927,
+            "date": "2026-07-27",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571928,
+            "date": "2026-07-28",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571929,
+            "date": "2026-07-29",
+            "plat": "LeetCode",
+            "count": 7
+          },
+          {
+            "id": 1795591571930,
+            "date": "2026-07-30",
+            "plat": "LeetCode",
+            "count": 8
+          },
+          {
+            "id": 1795591571931,
+            "date": "2026-07-31",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571932,
+            "date": "2026-08-01",
+            "plat": "LeetCode",
+            "count": 11
+          },
+          {
+            "id": 1795591571933,
+            "date": "2026-08-02",
+            "plat": "LeetCode",
+            "count": 12
+          },
+          {
+            "id": 1795591571934,
+            "date": "2026-08-03",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571935,
+            "date": "2026-08-04",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571936,
+            "date": "2026-08-05",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571937,
+            "date": "2026-08-06",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571938,
+            "date": "2026-08-07",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571939,
+            "date": "2026-08-08",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571940,
+            "date": "2026-08-09",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571941,
+            "date": "2026-08-10",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571942,
+            "date": "2026-08-11",
+            "plat": "LeetCode",
+            "count": 12
+          },
+          {
+            "id": 1795591571943,
+            "date": "2026-08-12",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571944,
+            "date": "2026-08-13",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571945,
+            "date": "2026-08-14",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571946,
+            "date": "2026-08-15",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571947,
+            "date": "2026-08-16",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571948,
+            "date": "2026-08-17",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571949,
+            "date": "2026-08-18",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571950,
+            "date": "2026-08-19",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571951,
+            "date": "2026-08-20",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571952,
+            "date": "2026-08-22",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571953,
+            "date": "2026-08-23",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571954,
+            "date": "2026-08-24",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571955,
+            "date": "2026-08-25",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571956,
+            "date": "2026-08-27",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571957,
+            "date": "2026-08-28",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571958,
+            "date": "2026-08-29",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571959,
+            "date": "2026-08-30",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571960,
+            "date": "2026-08-31",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571961,
+            "date": "2026-09-01",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571962,
+            "date": "2026-09-02",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571963,
+            "date": "2026-09-03",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571964,
+            "date": "2026-09-04",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571965,
+            "date": "2026-09-05",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571966,
+            "date": "2026-09-06",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571967,
+            "date": "2026-09-07",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571968,
+            "date": "2026-09-08",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571969,
+            "date": "2026-09-09",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571970,
+            "date": "2026-09-10",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571971,
+            "date": "2026-09-11",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571972,
+            "date": "2026-09-12",
+            "plat": "LeetCode",
+            "count": 6
+          },
+          {
+            "id": 1795591571973,
+            "date": "2026-09-13",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571974,
+            "date": "2026-09-14",
+            "plat": "LeetCode",
+            "count": 5
+          },
+          {
+            "id": 1795591571975,
+            "date": "2026-09-15",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571976,
+            "date": "2026-09-16",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571977,
+            "date": "2026-09-17",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571978,
+            "date": "2026-09-18",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571979,
+            "date": "2026-09-19",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571980,
+            "date": "2026-09-20",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571981,
+            "date": "2026-09-21",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571982,
+            "date": "2026-09-22",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571983,
+            "date": "2026-09-23",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571984,
+            "date": "2026-09-24",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571985,
+            "date": "2026-09-25",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571986,
+            "date": "2026-09-26",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571987,
+            "date": "2026-09-27",
+            "plat": "LeetCode",
+            "count": 4
+          },
+          {
+            "id": 1795591571988,
+            "date": "2026-09-28",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571989,
+            "date": "2026-09-29",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571990,
+            "date": "2026-09-30",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571991,
+            "date": "2026-10-01",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571992,
+            "date": "2026-10-02",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571993,
+            "date": "2026-10-03",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571994,
+            "date": "2026-10-04",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571995,
+            "date": "2026-10-05",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571996,
+            "date": "2026-10-06",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591571997,
+            "date": "2026-10-07",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591571998,
+            "date": "2026-10-08",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591571999,
+            "date": "2026-10-09",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572000,
+            "date": "2026-10-10",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591572001,
+            "date": "2026-10-11",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572002,
+            "date": "2026-10-12",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572003,
+            "date": "2026-10-13",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591572004,
+            "date": "2026-10-14",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572005,
+            "date": "2026-10-15",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572006,
+            "date": "2026-10-16",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572007,
+            "date": "2026-10-19",
+            "plat": "LeetCode",
+            "count": 3
+          },
+          {
+            "id": 1795591572008,
+            "date": "2026-10-20",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572009,
+            "date": "2026-10-21",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591572010,
+            "date": "2026-10-22",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572011,
+            "date": "2026-10-23",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572012,
+            "date": "2026-10-24",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572013,
+            "date": "2026-10-25",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591572014,
+            "date": "2026-10-26",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572015,
+            "date": "2026-10-27",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572016,
+            "date": "2026-10-28",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572017,
+            "date": "2026-10-29",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572018,
+            "date": "2026-10-30",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572019,
+            "date": "2026-10-31",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572020,
+            "date": "2026-11-01",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572021,
+            "date": "2026-11-02",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572022,
+            "date": "2026-11-03",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572023,
+            "date": "2026-11-04",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572024,
+            "date": "2026-11-05",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572025,
+            "date": "2026-11-06",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572026,
+            "date": "2026-11-07",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572027,
+            "date": "2026-11-08",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572028,
+            "date": "2026-11-09",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572029,
+            "date": "2026-11-10",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572030,
+            "date": "2026-11-11",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572031,
+            "date": "2026-11-12",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572032,
+            "date": "2026-11-13",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572033,
+            "date": "2026-11-14",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572034,
+            "date": "2026-11-15",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572035,
+            "date": "2026-11-16",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572036,
+            "date": "2026-11-18",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572037,
+            "date": "2026-11-19",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572038,
+            "date": "2026-11-21",
+            "plat": "LeetCode",
+            "count": 1
+          },
+          {
+            "id": 1795591572039,
+            "date": "2026-11-23",
+            "plat": "LeetCode",
+            "count": 2
+          },
+          {
+            "id": 1795591572040,
+            "date": "2026-11-24",
+            "plat": "LeetCode",
+            "count": 1
+          }
+        ],
+        "comp": [],
+        "friends": [],
+        "base": 0,
+        "dsa": {
+          "easy": 263,
+          "medium": 932,
+          "hard": 93,
+          "topics": []
+        },
+        "lc": {
+          "user": "bewareof_Brijesh",
+          "base": "http://localhost:4000/api/leetcode",
+          "solved": 1288,
+          "last": "11/25/2026, 12:56:11 PM"
+        }
+      },
+      "summary": {
+        "solved": 1288,
+        "cur": 2,
+        "max": 176,
+        "rating": 0,
+        "updated": "2026-11-25"
+      },
+      "social": {
+        "friends": [
+          "jharishu749@gmail.com"
+        ],
+        "incoming": [],
+        "outgoing": []
+      }
+    }
+  }
+}
